@@ -15,7 +15,10 @@
 <body>
   <!-- Rating state start -->
   <form id="rating" action="" method="post" class="card" >
-    <img src="https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg" alt="rating icon" id="star" />
+  <div id="img">
+
+   <img src="https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg" alt="rating icon" id="star" /> 
+  </div>
     <h1>How did we do?</h1>
     <p>
       Please let us know how we did with your support request. All feedback is
@@ -37,10 +40,11 @@
     <input type="submit" class="btn" value="Submit" id="submitBtn" />
   </form>
   <!-- Rating state end -->
+  
 
   <!-- Thank you state start -->
 
-  <div id="thankYou" class="card" display: none;>
+  <div id="thankYou" class="card" >
     <div class="imgBlock"></div>
     <p class="message">
       You selected <span class="userValue">0</span> out of 5
@@ -59,6 +63,27 @@
 </body>
 
 <script src="app.js"></script>
+<script>
+  switch (3)
+      {
+        case 1:
+          
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 2:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 3:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 4:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        default:
+                    document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+      }
+</script>
 
 
 </html>

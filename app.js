@@ -20,6 +20,27 @@ var getSiblings = function (elem) {
       let optBtn = document.querySelector(rateNum);
       console.log(optBtn);
       optBtn.style.backgroundColor = "var(--orange)";
+      console.log(optBtn.textContent) 
+
+      switch (optBtn.textContent)
+      {
+        case 1:
+          
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 2:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 3:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        case 4:
+          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+        default:
+                    document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+break;
+      }
       let sib = getSiblings(optBtn);
       // console.log(sib);
       for (let i in sib) {
@@ -27,6 +48,17 @@ var getSiblings = function (elem) {
         sib[i].style.backgroundColor = "var(--mediumGreyOp)";
       }
     });
+  }
+  switch(opt){
+    case 1:
+      console.log(onestar)
+    case 2:
+      console.log(Twostar)
+      case 2:
+      console.log(Threestar)
+      
+      
+
   }
   var userValue = document.querySelector(".userValue");
   var submitBtn = document.getElementById("submitBtn");
