@@ -9,6 +9,7 @@ var getSiblings = function (elem) {
     }
     return siblings;
   };
+  var select ;
   thankYou.style.display = "none";
   var userInput;
   var opt = document.querySelectorAll("input[name=rate]");
@@ -20,27 +21,23 @@ var getSiblings = function (elem) {
       let optBtn = document.querySelector(rateNum);
       console.log(optBtn);
       optBtn.style.backgroundColor = "var(--orange)";
-      console.log(optBtn.textContent) 
+      
+      select = optBtn.textContent
+      console.log(select) 
+      if (select == 1) { 
+        console.log("case one selected");
+        var x = document.createElement("img");
+        x.setAttribute("src", "img_pulpit.jpg");
+       
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);  
+        }
+      else if(select == 2)
+      { console.log("2nd case");
+      document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
+    }   
 
-      switch (optBtn.textContent)
-      {
-        case 1:
-          
-          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-break;
-        case 2:
-          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-break;
-        case 3:
-          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-break;
-        case 4:
-          document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-break;
-        default:
-                    document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-break;
-      }
+      
       let sib = getSiblings(optBtn);
       // console.log(sib);
       for (let i in sib) {
@@ -49,17 +46,9 @@ break;
       }
     });
   }
-  switch(opt){
-    case 1:
-      console.log(onestar)
-    case 2:
-      console.log(Twostar)
-      case 2:
-      console.log(Threestar)
-      
-      
+        
 
-  }
+        
   var userValue = document.querySelector(".userValue");
   var submitBtn = document.getElementById("submitBtn");
 
