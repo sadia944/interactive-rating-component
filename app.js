@@ -24,18 +24,8 @@ var getSiblings = function (elem) {
       
       select = optBtn.textContent
       console.log(select) 
-      if (select == 1) { 
-        console.log("case one selected");
-        var x = document.createElement("img");
-        x.setAttribute("src", "img_pulpit.jpg");
-       
-        x.setAttribute("alt", "The Pulpit Rock");
-        document.body.appendChild(x);  
-        }
-      else if(select == 2)
-      { console.log("2nd case");
-      document.getElementById("img").src = "https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/16de82dee8e9299ac78d332cc3b5480da9bf435c/images/icon-star.svg";
-    }   
+      
+     
 
       
       let sib = getSiblings(optBtn);
